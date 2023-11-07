@@ -8,7 +8,7 @@ This project is still in its early stages, but I am excited about the potential 
 ## Technologies to be used:
 
 - Databricks
-- Azure SQL
+- AWS EC2 SQL
 - Python
 - Airflow
 
@@ -17,7 +17,7 @@ This technology stack will enable the development of the machine learning algori
 ## Project Outline:
 
 1. Pull data from BoardGameGeek API and clean using Python.
-2. Upload cleaned data to Azure SQL.
+2. Upload cleaned data postgres db in AWS EC2 instance.
 3. Analyze data using queries to identify patterns in game mechanics, play style, and user ratings.
 4. Develop machine learning algorithm to sort games based on identified patterns.
 5. Test and refine algorithm to ensure accuracy.
