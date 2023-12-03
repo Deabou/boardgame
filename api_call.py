@@ -24,5 +24,14 @@ def search_board_games(query):
         return games
 
 
-search_query = ""
+def dictionary_filter(dict, column, value):
+    desired_value = [d for d in dict if d[column] in {value}]
+    return desired_value
+
+
+search_query = "game"
 search_results = search_board_games(search_query)
+
+
+video_games = dictionary_filter(search_results, "type", "videogame")
+board_games = dictionary_filter(search_results, "type", "boardgame")
